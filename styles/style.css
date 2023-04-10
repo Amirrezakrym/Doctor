@@ -1,3 +1,13 @@
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+body{
+    font-family: vazirNormal;
+}
 *{
     margin: 0; 
     padding: 0;
@@ -16,6 +26,7 @@
     display: block;
     margin-top: 6px;
 }
+
 /* .btn-about {
     padding: 10px 45px 10px 45px !important;
 } */
@@ -50,7 +61,27 @@
     margin: 5px 0;
     transition: 0.5s ease;
 }
+/* slider */
+    .slider-back-img{
+    position: absolute;
+    width: 196px;
+    bottom: 47px;
+    left: -59px;
+    }
 
+.slider-back-img img{
+    width: 100%;
+}
+
+.slider-back-text{  
+    width: 450px;
+    position: absolute;
+    bottom: 145px;
+    left: -163px;
+}
+.slider-back-text p{
+    font-size: 28px;
+}
 @media (min-width: 1400px){
     .navbar{
         justify-content: space-evenly !important;
@@ -70,6 +101,20 @@
     .btn-about {
         padding: 10px 45px 10px 45px !important;
    
+    }
+    .search-icon {
+        position: absolute;
+        left: 11px;
+    }
+    /* slider */
+    .carousel-item{
+        height: 640px;
+    }
+    .slider-back-img {
+        position: absolute;
+        width: 303px;
+        bottom: 104px;
+        left: -97px;
     }
 }
 @media (max-width: 1400px){
@@ -96,6 +141,14 @@
         font-size: 20px;
         margin-left: 44px;
     }
+    .search-icon {
+        position: absolute;
+        left: 11px;
+    }
+    /* slider */
+    .carousel-item{
+        height: 525px;
+    }
     
 }
 @media (max-width: 1199px){
@@ -117,9 +170,6 @@
         font-size: 17px;
         margin-left: 44px;
     }
-    .navbar-brand{
-        margin-left: 30px !important;
-    }
     .navbar-brand img {
         width: 140px;
     }
@@ -127,11 +177,12 @@
         padding: 9px 25px!important;
     }
     .search-icon {
+        position: absolute;
         height: 46px;
         width: 45px;
         border-radius: 50%;
         border: 3px solid #ccc;
-        margin-left: 20px;
+        left: -3px;
     }
     .search-icon img {
         width: 26px;
@@ -140,6 +191,11 @@
         display: block;
         margin-top: 6px;
     }
+     /* slider */
+     .carousel-item{
+        height: 400px;
+    }
+    
 }
 @media (max-width: 991px){
     .header{
@@ -153,13 +209,31 @@
         flex-grow: 0;
         font-size: 14px;
     }
-    .navbar-brand{
-        margin-left: 260px !important;
-    }
     .navbar-brand img {
         width: 140px;
     }
-   
+    .search-icon {
+        position: absolute;
+        height: 46px;
+        width: 45px;
+        border-radius: 50%;
+        border: 3px solid #ccc;
+        /* left: 67px; */
+        top: 8px;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: 13px;
+        left: 70px;
+    }
+    .navbar-brand{
+        margin-right: 0 !important;
+    }
+     /* slider */
+     .carousel-item{
+        height: 380px;
+    }
+    
 }
 @media (max-width: 768px){
     .header{
@@ -172,18 +246,17 @@
     .header img{
         width: 13px;
     }
-    .navbar-brand{
-        margin-left: 140px !important;
-    }
     .navbar-brand img {
         width: 140px;
     }
     .search-icon {
-        height: 41px;
-        width: 39px;
+        position: absolute;
+        height: 46px;
+        width: 45px;
         border-radius: 50%;
         border: 3px solid #ccc;
-        margin-left: 20px;
+        /* left: 67px; */
+        top: 8px;
     }
     .search-icon img {
         width: 23px;
@@ -192,6 +265,11 @@
         display: block;
         margin-top: 6px;
     }
+      /* slider */
+      .carousel-item{
+        height: 335px;
+    }
+    
    
 }
 @media (max-width: 576px){
@@ -211,4 +289,23 @@
     .navbar-brand img {
         width: 113px;
     }
+    .search-icon {
+        position: absolute;
+        height: 46px;
+        width: 45px;
+        border-radius: 50%;
+        border: 3px solid #ccc;
+        right: 15px;
+        top: 6px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 7px;
+        left: 14px;
+    }
+      /* slider */
+      .carousel-item{
+        height: 200px;
+    }
+    
 }

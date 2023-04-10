@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor</title>
     <link rel="stylesheet" href="styles/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <div class="row bg-success justify-content-start">
 
 
-        <div class="col-8 col-md-8 col-lg-8 mt-2 mt-xl-0 col-xl-5 text-start header">      
+        <div class="col-8 col-md-8 col-lg-8 mt-2 mt-xl-0 col-xl-5 text-end header">      
             
             <img src="image/icon/lo.png" alt="">
 
@@ -30,7 +30,7 @@
             
            
 
-        <div class="d-none d-xl-block col-xl-5 header text-start">
+        <div class="d-none d-xl-block col-xl-5 header text-end">
 
             <img src="image/icon/phone.png" alt="">
             
@@ -59,7 +59,7 @@
     
     </div>
 
-        <div class="col-12 col-md-12 my-2 d-lg-block d-xl-none col-xl-12 header text-start">
+        <div class="col-12 col-md-12 my-2 d-lg-block d-xl-none col-xl-12 header text-end">
 
             <img src="image/icon/phone.png" alt="">
 
@@ -75,10 +75,10 @@
         </div>
     
     </div>
-
+                                         <!-- navbar -->
     <div class="nav-container">
         
-        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    
     <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
 
         <a href="#" class="navbar-brand p-0 m-0">
@@ -86,11 +86,7 @@
         </a>
 
 
-        <div class="search-icon"><img src="image/icon/search.png" alt=""></div>
-    
-        <button type="button" class="btn-about btn d-none d-md-block btn-success rounded-pill">تماس با ما</button>
-       
-    <!-- Links --><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <div class="btn-container" onclick="test(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -104,29 +100,125 @@
 
     <ul class="navbar-nav me-auto mx-auto p-0">
       <li class="nav-item text-center"> <a class="nav-link" href="#">صفحه نخست</a> </li>
-      <li class="nav-item text-center"> <a class="nav-link" href="#">درباره</a> </li>
-      <li class="nav-item text-center"> <a class="nav-link" href="#">اخبار و مقالات</a> </li>
+
+
+
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            درباره
+        </a>
+      
+        
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+
+         
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          
+        </ul>
+
+        
+
+
+      </div>
+
+
+
+
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      اخبار و مقالات
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+
+      
       <li class="nav-item text-center"> <a class="nav-link" href="#">خدمات</a> </li>
       <li class="nav-item text-center"> <a class="nav-link" href="#">گوگل اسکالر</a> </li>
       <li class="nav-item text-center"> <a class="nav-link" href="#">تجربه بیماران</a> </li>
       <li class="nav-item text-center"> <a class="nav-link" href="#">محتوای ویدیویی</a> </li> 
-      <button type="button" class="btn-about btn d-md-none btn-success rounded-pill">تماس با ما</button>
+      <button type="button" class="btn-about btn d-lg-none btn-success rounded-pill">تماس با ما</button>
     </ul>
 
     </div>
-  
+
+    <div class="search-icon "><img src="image/icon/search.png" alt=""></div>
     
-    
-    
+    <button type="button" class="btn-about btn d-none d-lg-block me-xl-5 btn-success rounded-pill">تماس با ما</button>
+
+        
     </nav>
     </div>
-
-
-
-
-
     </div>
      
+                                    <!-- slider -->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" dir="rtl" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div> -->
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="w-100 h-100" src="image/slider-1.jpg" alt="" class="d-block w-100">
+        <div class="carousel-caption">
+
+            <div class="slider-back-img">
+                <img src="image/slider-back-1.png" alt="">
+            </div>
+
+            <div class="slider-back-text text-end">
+                <p class="mb-3  fw-bold" style="font-family: iransans,tahoma, serif;">تلاش ما بازگرداندن توانمندی های حركتی شما</p>
+                
+                <span>با بكارگيری تكنولوژی های پيشرفته ارتوپدی در روند درمان</span>
+            </div>
+
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="w-100 h-100" src="image/slider-2.jpg" alt="" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item">
+        <img class="w-100 h-100" src="image/slider-3.jpg" alt="" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item">
+        <img class="w-100 h-100" src="image/slider-4.jpg" alt="" class="d-block w-100">
+      </div>
+
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    
+  </div>
+
+<div style="width: 200px; height: 200px; margin: auto; background-color: red;"></div>
 
 
 

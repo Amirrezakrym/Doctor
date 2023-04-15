@@ -13,6 +13,29 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.tasks{
+    width: 830px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 89px;
+    right: 280px;
+    z-index: 2;
+    box-shadow: 0px 15px 54px 8px rgb(0 0 0 / 75%);
+}
+.tab-content{
+    display: inline-block;
+    width: 21%;
+    height: 100%;
+    margin-right: 24px;
+    background-color: red;
+}
+.lng:hover{
+    color: #000;
+    transition: 700ms;
+}
+
 .search-icon{
     height: 50px;
     width: 54px;
@@ -27,9 +50,6 @@ body{
     margin-top: 6px;
 }
 
-/* .btn-about {
-    padding: 10px 45px 10px 45px !important;
-} */
 .navbar-light .navbar-toggler{
     background-color: rgb(56, 56, 56);
     border-radius: 0;
@@ -98,13 +118,11 @@ body{
         flex-grow: 0;
         font-size: 20px;
     }
+    .dropdown-toggle {
+        font-size: 20px;
+    }
     .btn-about {
         padding: 10px 45px 10px 45px !important;
-   
-    }
-    .search-icon {
-        position: absolute;
-        left: 11px;
     }
     /* slider */
     .carousel-item{
@@ -133,6 +151,9 @@ body{
         flex-grow: 0;
         font-size: 20px;
     }
+    .dropdown-toggle {
+        font-size: 19px;
+    }
     .btn-about {
         padding: 9px 25px!important;
     }
@@ -141,10 +162,7 @@ body{
         font-size: 20px;
         margin-left: 44px;
     }
-    .search-icon {
-        position: absolute;
-        left: 11px;
-    }
+   
     /* slider */
     .carousel-item{
         height: 525px;
@@ -153,7 +171,7 @@ body{
 }
 @media (max-width: 1199px){
     .navbar{
-        justify-content: center !important;
+        justify-content: space-evenly !important;
     }
     .header{
         font-size: 16px; 
@@ -173,23 +191,24 @@ body{
     .navbar-brand img {
         width: 140px;
     }
+    .dropdown-toggle {
+        font-size: 16px;
+    }
     .btn-about {
-        padding: 9px 25px!important;
+        padding: 9px 9px!important;
     }
     .search-icon {
-        position: absolute;
-        height: 46px;
-        width: 45px;
+        height: 39px;
+        width: 39px;
         border-radius: 50%;
         border: 3px solid #ccc;
-        left: -3px;
     }
     .search-icon img {
-        width: 26px;
-        height: 28px;
+        width: 23px;
+        height: 23px;
         margin: auto;
         display: block;
-        margin-top: 6px;
+        margin-top: 7px;
     }
      /* slider */
      .carousel-item{
@@ -218,7 +237,7 @@ body{
         width: 45px;
         border-radius: 50%;
         border: 3px solid #ccc;
-        /* left: 67px; */
+        right: 15px;
         top: 8px;
     }
     .navbar-toggler{
@@ -255,7 +274,6 @@ body{
         width: 45px;
         border-radius: 50%;
         border: 3px solid #ccc;
-        /* left: 67px; */
         top: 8px;
     }
     .search-icon img {
@@ -264,6 +282,11 @@ body{
         margin: auto;
         display: block;
         margin-top: 6px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 7px;
+        left: 14px;
     }
       /* slider */
       .carousel-item{

@@ -14,23 +14,84 @@ body{
     box-sizing: border-box;
 }
 .tasks{
-    width: 830px;
-    height: 250px;
+    display: flex;
+    width: 820px;
+    height: 230px;
     background-color: #fff;
     border-radius: 3px;
     position: absolute;
-    top: 89px;
-    right: 280px;
-    z-index: 2;
-    box-shadow: 0px 15px 54px 8px rgb(0 0 0 / 75%);
+    top: 60px;
+    right: auto;
+    z-index: -2;
+    box-shadow: 0px 3px 19px -3px rgba(0,0,0,0.50);
+    opacity: 0;
+    transition: all .5s;
 }
 .tab-content{
-    display: inline-block;
     width: 21%;
     height: 100%;
     margin-right: 24px;
-    background-color: red;
 }
+.tab-content:first-child{
+    margin-right: 0px;
+}
+
+.tab-content p{
+    margin-bottom: 0 !important;
+    margin-top: 30px;
+    font-size: 17px;
+    margin-right: 23px;
+}
+
+.tab-content hr{
+    width: 90%;
+    margin:5px auto;
+    background: green;
+    height: 3px;
+}
+ .task-list{
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    padding: 0;
+    margin-right: 33px;
+    margin-top: 12px;
+ }
+
+ .task-list li{
+    margin-bottom: 16px;
+    text-align: right;
+ }
+
+ 
+.hoveer{
+    overflow: hidden;
+}
+.hoveer:hover .tasks{
+    z-index: 1;
+    opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .lng:hover{
     color: #000;
     transition: 700ms;
@@ -82,30 +143,27 @@ body{
     transition: 0.5s ease;
 }
 /* slider */
-    .slider-back-img{
+    .slider-back-img-left{
     position: absolute;
     width: 196px;
     bottom: 47px;
     left: -59px;
     }
 
-.slider-back-img img{
+.slider-back-img-left img{
     width: 100%;
 }
 
-.slider-back-text{  
+.slider-back-text-left{  
     width: 450px;
     position: absolute;
     bottom: 145px;
     left: -163px;
 }
-.slider-back-text p{
+.slider-back-text-left p{
     font-size: 28px;
 }
 @media (min-width: 1400px){
-    .navbar{
-        justify-content: space-evenly !important;
-    }
     .header{
         font-size: 13px; 
         color: #fff;
@@ -113,6 +171,10 @@ body{
     }
     .header-icon{
         font-size: 12px;
+    }
+    /* navbar */
+    .navbar{
+        justify-content: space-evenly !important;
     }
     .ul-collapse{
         flex-grow: 0;
@@ -124,15 +186,48 @@ body{
     .btn-about {
         padding: 10px 45px 10px 45px !important;
     }
+    
     /* slider */
     .carousel-item{
         height: 640px;
     }
-    .slider-back-img {
+    .slider-back-img-left {
         position: absolute;
         width: 303px;
         bottom: 104px;
         left: -97px;
+    }
+    .slider-back-img-left img{
+        width: 100%;
+    }
+    
+    .slider-back-text-left{  
+        width: 450px;
+        position: absolute;
+        bottom: 145px;
+        left: -163px;
+    }
+    .slider-back-text-left p{
+        font-size: 28px;
+    }
+    .slider-back-img-right img{
+        width: 100%;
+    }
+    
+    .slider-back-text-right{  
+        width: 450px;
+        position: absolute;
+        bottom: 145px;
+        right: -97px;
+    }
+    .slider-back-text-right p{
+        font-size: 28px;
+    }
+    .slider-back-img-right {
+        position: absolute;
+        width: 303px;
+        bottom: 104px;
+        right: -97px;
     }
 }
 @media (max-width: 1400px){
@@ -162,6 +257,9 @@ body{
         font-size: 20px;
         margin-left: 44px;
     }
+    .navbar-brand img {
+        width: 170px;
+    }
    
     /* slider */
     .carousel-item{
@@ -170,9 +268,6 @@ body{
     
 }
 @media (max-width: 1199px){
-    .navbar{
-        justify-content: space-evenly !important;
-    }
     .header{
         font-size: 16px; 
         color: #fff;
@@ -182,6 +277,10 @@ body{
     }
     .header img{
         width: 18px;
+    }
+    /* navbar */
+    .navbar{
+        justify-content: space-evenly !important;
     }
     .ul-collapse{
         flex-grow: 0;
@@ -209,6 +308,20 @@ body{
         margin: auto;
         display: block;
         margin-top: 7px;
+    }
+    .tasks{
+        display: flex;
+        width: 705px;
+        height: 230px;
+        background-color: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 60px;
+        right: auto;
+        z-index: -2;
+        box-shadow: 0px 3px 19px -3px rgba(0,0,0,0.50);
+        opacity: 0;
+        transition: all .5s;
     }
      /* slider */
      .carousel-item{

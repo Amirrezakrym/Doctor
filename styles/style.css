@@ -122,22 +122,8 @@ body{
 }
  
 /* section */
-.behind-doctor{
-    position: absolute;
-    top: -33px;
-    left: 53px;
-    background-color: green;
-    width: 491px;
-    height: 493px;
-    z-index: -1;
-}
-.img-goshi{
-    position: absolute;
-    width: 565px;
-    top: 25px;
-    right: 5px;
-    z-index: -1;
-}
+
+
 .title-1{
     font-weight: bold;
     margin-bottom: 35px;
@@ -160,6 +146,72 @@ body{
     display: inline-block;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+/* card */
+
+.header-card{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.line{
+    width: 79px;
+    background: green;
+    height: 4px;
+    margin-bottom: 50px;
+}
+.back-img {
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background: rgb(153, 153, 153);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.back-img img{
+    margin-top: 30px;
+}
+.cards p{
+    width: 90%;
+    margin: 15px auto 18px;
+    word-spacing: 5px;
+    font-size: 14px;
+    color: #999999;
+    text-align: start;
+    letter-spacing: -0.5px;
+    line-height: 1.9em;
+}
+/* poster */
+.poster-img{
+    margin-top: 75px;
+    background-image: url(../image/poster.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poster-img .card{
+    background-color: rgba(0, 153, 117, 0.74);
+}
+.poster-img h2{
+    padding-top: 55px;
+    font-weight: bold;
+}
+.poster-img img{
+    margin: 18px auto 15px auto;
+    width: 40px;
+}
+.poster-img p{
+    color: rgba(255, 255, 255, 0.9);
+    width: 52%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.poster-img span{
+    color:rgba(255, 255, 255, 0.81);
+    font-size: 11px;
+    margin-bottom: 30px;
 }
 @media (min-width: 1400px){
     .header{
@@ -228,15 +280,11 @@ body{
         right: -97px;
     }
     /* section */
-    .behind-doctor{
-        position: absolute;
-        top: -33px;
-        left: 53px;
-        background-color: green;
-        width: 491px;
-        height: 493px;
-        z-index: -1;
+    .img-doctor{
+        margin-top: 70px;
+        box-shadow: -28px -28px 0px -5px rgb(0, 153, 117);
     }
+    
     .img-goshi{
         position: absolute;
         width: 565px;
@@ -343,20 +391,15 @@ body{
         right: -97px;
     }
     /* section */
-    .behind-doctor{
-        position: absolute;
-        top: -33px;
-        left: 6px;
-        background-color: green;
-        width: 491px;
-        height: 493px;
-        z-index: -1;
+    .img-doctor{
+        margin-top: 70px;
+        box-shadow: -28px -28px 0px -5px rgb(0, 153, 117);
     }
     .img-goshi{
         position: absolute;
-        width: 565px;
+        width: 455px;
         top: 25px;
-        right: 5px;
+        right: 80px;
         z-index: -1;
     }
     .title-1{
@@ -366,13 +409,14 @@ body{
     }
     .title-2{
         font-weight: bold;
-        font-size: 21px;
+        font-size: 17px;
         margin-bottom: 13px;
-        color: #666666;
+        color: #666666 ;
+        white-space: nowrap;
     }
     .caption{
         text-align: justify;
-        font-size: 18px;
+        font-size: 16px;
         color:#999999;
     }
     .dat{
@@ -484,11 +528,42 @@ body{
         right: -90px;
     }
     /* section */
+    .img-doctor{
+        width: 380px;
+        margin-top: 70px;
+        box-shadow: -28px -28px 0px -5px rgb(0, 153, 117);
+    }
+    .title-1{
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .title-2{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 13px;
+        color: #666666 ;
+        white-space: initial;
+    }
+    .caption{
+        text-align: justify;
+        font-size: 13px;
+        color:#999999;
+    }
+    .dat{
+        width: 11px;
+        height: 11px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
     .img-goshi {
         position: absolute;
-        width: 418px;
-        top: 158px;
-        right: 5px;
+        width: 350px;
+        top: 79px;
+        right: 37px;
         z-index: -1;
     }
     
@@ -566,6 +641,44 @@ body{
         width: 175px;
         bottom: 70px;
         right: -90px;
+    }
+    /* section */
+    .img-doctor{
+        width: 330px;
+    }
+    
+    .title-1{
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .title-2{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 13px;
+        color: #666666 ;
+        white-space: initial;
+    }
+    .caption{
+        text-align: justify;
+        font-size: 13px;
+        color:#999999;
+    }
+    .dat{
+        width: 11px;
+        height: 11px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .img-goshi {
+        position: absolute;
+        width: 320px;
+        top: 158px;
+        right: 5px;
+        z-index: -1;
     }
 }
 @media (max-width: 768px){
@@ -650,6 +763,44 @@ body{
         bottom: 60px;
         right: -63px;
     }
+     /* section */
+     .img-doctor{
+        width: 440px;
+        margin-top: 70px;
+    }
+    .title-1{
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .title-2{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 13px;
+        color: #666666 ;
+        white-space: initial;
+    }
+    .caption{
+        text-align: justify;
+        font-size: 13px;
+        color:#999999;
+    }
+    .dat{
+        width: 11px;
+        height: 11px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .img-goshi {
+        position: absolute;
+        width: 320px;
+        top: 95px;
+        right: 110px;
+        z-index: -1;
+    }
    
 }
 @media (max-width: 576px){
@@ -730,6 +881,44 @@ body{
         width: 97px;
         bottom: 40px;
         right: -23px;
+    }
+    /* section */
+    .img-doctor{
+        width: 72%;
+        margin-top: 70px;
+    }
+    .title-1{
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 23px;
+    }
+    .title-2{
+        font-weight: bold;
+        font-size: 11px;
+        margin-bottom: 13px;
+        color: #666666 ;
+        white-space: initial;
+    }
+    .caption{
+        text-align: justify;
+        font-size: 10px;
+        color:#999999;
+    }
+    .dat{
+        width: 11px;
+        height: 11px;
+        background-color: green;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .img-goshi {
+        position: absolute;
+        width: 265px;
+        top: 40px;
+        right: 16%;
+        z-index: -1;
     }
    
 }

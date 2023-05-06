@@ -312,6 +312,37 @@ body{
     position: absolute;
     left: 15px;
 }
+.faq-line{
+    width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.5;
+    background: none !important;
+    border-top: 3px dashed #fff;
+}
+/* map */
+.map{
+    background-image: url(../image/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* footer */
+footer{
+   background-color: rgb(238, 238, 238);
+}
+.adres{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color:#444444;
+}
+.number{
+    font-size: 12px;
+    color:#444444;
+}
+.day{
+    font-size: 14px;
+}
 @media (min-width: 1400px){
     .header{
         font-size: 13px; 
@@ -419,7 +450,10 @@ body{
    .img-doctor-science{
     margin-top: 70px;
     box-shadow: -28px -28px 0px -5px rgb(204, 204, 204);
-
+}
+/* faq */
+.faq a,.faq div{
+    font-size: 18px !important;
 }
 }
 @media (max-width: 1400px){
@@ -536,6 +570,10 @@ body{
     .img-doctor-science{
         margin-top: 70px;
         box-shadow: -28px -28px 0px -5px rgb(204, 204, 204);
+    }
+    /* faq */
+    .faq a,.faq div{
+        font-size: 18px !important;
     }
 }
 @media (max-width: 1199px){
@@ -685,6 +723,10 @@ body{
     .amal-doctor {
         box-shadow: 195px 195px 0px -170px rgb(204 204 204), -195px -195px 0px -170px rgb(204 204 204);
     }
+    /* faq */
+    .faq a,.faq div{
+        font-size: 18px !important;
+    }
 }
 @media (max-width: 991px){
     .header{
@@ -818,6 +860,10 @@ body{
     }
     .amal-icon img{
         width: 60px;
+    }
+    /* faq */
+    .faq a,.faq div{
+        font-size: 15px !important;
     }
 }
 @media (max-width: 768px){
@@ -967,6 +1013,10 @@ body{
     margin: 90px 0 30px 0;
     font-weight: bold;
     font-size: 24px;
+}
+/* faq */
+.faq a,.faq div{
+    font-size: 15px !important;
 }
 }
 @media (max-width: 576px){
@@ -1128,5 +1178,13 @@ body{
     margin: 90px 0 30px 0;
     font-weight: bold;
     font-size: 17px;
+}
+.tik-text{
+    color:#999999;
+    font-size: 13px;
+}
+/* faq */
+.faq a,.faq div{
+    font-size: 14px !important;
 }
 }

@@ -1188,3 +1188,25 @@ footer{
     font-size: 14px !important;
 }
 }
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+    color: #fff;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
